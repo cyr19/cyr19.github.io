@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Publications by Yanran Chen." />
+    <meta name="theme-color" content="#f2efe8" />
+    <title>Publications · Yanran Chen</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:wght@300&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="publications-data.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <a class="site-name" href="index.html">Yanran Chen</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#news">News</a>
+        <a class="active" href="publications.html" aria-current="page">Publications</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme">Dark</button>
+      </nav>
+    </header>
+
+    <main id="main-content" class="inner-page">
+      <section class="page-intro publication-intro">
+        <a class="back-link" href="index.html#publications">← Home</a>
+        <h1>Publications</h1>
+        <div class="quick-links">
+          <a href="https://scholar.google.com/citations?user=K0iCb00AAAAJ">Google Scholar</a>
+          <a href="https://aclanthology.org/people/yanran-chen/unverified/">ACL Anthology</a>
+        </div>
+      </section>
+
+      <section class="publication-filter-panel" aria-label="Publication filters">
+        <div class="filter-group">
+          <span class="filter-label">Type</span>
+          <details class="filter-menu" data-filter="type">
+            <summary data-default-label="All types">All types</summary>
+            <div class="filter-options" role="group" aria-label="Publication type">
+              <label><input type="checkbox" value="conference" /> Conference proceedings</label>
+              <label><input type="checkbox" value="journal" /> Journals</label>
+              <label><input type="checkbox" value="preprint" /> Preprints</label>
+            </div>
+          </details>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-label">Venue</span>
+          <details class="filter-menu" data-filter="venue">
+            <summary data-default-label="All venues">All venues</summary>
+            <div class="filter-options" role="group" aria-label="Publication venue">
+              <label><input type="checkbox" value="arxiv" /> arXiv</label>
+              <label><input type="checkbox" value="eacl" /> EACL</label>
+              <label><input type="checkbox" value="emnlp" /> EMNLP</label>
+              <label><input type="checkbox" value="european-societies" /> European Societies</label>
+              <label><input type="checkbox" value="eval4nlp" /> Eval4NLP</label>
+              <label><input type="checkbox" value="findings-acl" /> Findings of ACL</label>
+              <label><input type="checkbox" value="mlwa" /> Machine Learning with Applications</label>
+              <label><input type="checkbox" value="nllg-arxiv-report" /> NLLG arXiv Report</label>
+              <label><input type="checkbox" value="plos-one" /> PLOS One</label>
+              <label><input type="checkbox" value="reprogen" /> ReproGen</label>
+              <label><input type="checkbox" value="tacl" /> TACL</label>
+            </div>
+          </details>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-label">Year</span>
+          <details class="filter-menu" data-filter="year">
+            <summary data-default-label="All years">All years</summary>
+            <div class="filter-options" role="group" aria-label="Publication year">
+              <label><input type="checkbox" value="2026" /> 2026</label>
+              <label><input type="checkbox" value="2025" /> 2025</label>
+              <label><input type="checkbox" value="2024" /> 2024</label>
+              <label><input type="checkbox" value="2023" /> 2023</label>
+              <label><input type="checkbox" value="2022" /> 2022</label>
+              <label><input type="checkbox" value="2021" /> 2021</label>
+            </div>
+          </details>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-label">Authorship</span>
+          <details class="filter-menu" data-filter="authorship">
+            <summary data-default-label="All papers">All papers</summary>
+            <div class="filter-options" role="group" aria-label="Publication authorship">
+              <label><input type="checkbox" value="first" /> First-authored</label>
+              <label><input type="checkbox" value="coauthor" /> Co-authored</label>
+            </div>
+          </details>
+        </div>
+
+        <button id="reset-publication-filters" type="button">Reset</button>
+        <p id="publication-result-count" aria-live="polite">17 publications</p>
+      </section>
+
+      <section class="publication-archive" aria-label="Publication list">
+        <div class="year-group" data-year-group="2026">
+          <h2>2026</h2>
+
+          <article class="publication-item" data-paper-id="syntax-change" data-type="journal" data-venue="plos-one" data-year="2026" data-authorship="first">
+            <h3>Syntactic Language Change in English and German: Metrics, Parsers, and Convergences</h3>
+            <p class="authors"><strong>Yanran Chen</strong>, Wei Zhao, Anne Breitbarth, Manuel Stoeckel, Alexander Mehler, Dominik Schlechtweg, and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>PLOS One · Journal</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0346096">Paper</a>
+                <a href="https://github.com/cyr19/syntaxchange">Code+Data</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item" data-paper-id="emotion-fallacy" data-type="conference" data-venue="eacl" data-year="2026" data-authorship="first">
+            <h3>
+              Emotionally Charged, Logically Blurred: AI-driven Emotional Framing Impairs Human Fallacy Detection
+              <span class="paper-award"><span class="award-medal" aria-hidden="true">🏅</span> Outstanding Paper Award</span>
+            </h3>
+            <p class="authors"><strong>Yanran Chen</strong>, Lynn Greschner, Roman Klinger, Michael Klenk, and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>EACL · Conference</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://aclanthology.org/2026.eacl-long.316/">Paper</a>
+                <a href="https://github.com/NL2G/EMCONA-UTN/tree/main/emotion_fallacy">Code+Data</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item" data-paper-id="who-annotates" data-type="preprint" data-venue="arxiv" data-year="2026" data-authorship="coauthor">
+            <h3>Who Annotates in NLP? A Large-scale Assessment of Human Annotation Reporting between 2018 and 2025</h3>
+            <p class="authors">Maria Kunilovskaya, Gagan Bhatia, Lisa Sophie Albertelli, <strong>Yanran Chen</strong>, Christian Greisinger, Lotta Kiefer, Christoph Leiter, Subhadeep Roy, Tewodros Achamaleh, Muhammad Arslan Manzoor, Sebastian Pohl, Yufang Hou, and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>arXiv:2606.02255 · Preprint</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://arxiv.org/abs/2606.02255">Paper</a>
+                <span class="publication-action-unavailable" title="No public code or data link is available">Code+Data</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="year-group" data-year-group="2025">
+          <h2>2025</h2>
+
+          <article class="publication-item" data-paper-id="argument-summarization" data-type="conference" data-venue="emnlp" data-year="2025" data-authorship="coauthor">
+            <h3>Argument Summarization and its Evaluation in the Era of Large Language Models</h3>
+            <p class="authors">Moritz Altemeyer, Steffen Eger, Johannes Daxenberger, <strong>Yanran Chen</strong>, Tim Altendorf, Philipp Cimiano, and Benjamin Schiller</p>
+            <div class="publication-footer">
+              <span>EMNLP · Conference</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://aclanthology.org/2025.emnlp-main.1797/">Paper</a>
+                <a href="https://github.com/NL2G/argsum">Code+Data</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item" data-paper-id="emotion-convincingness" data-type="conference" data-venue="findings-acl" data-year="2025" data-authorship="first">
+            <h3>Do Emotions Really Affect Argument Convincingness? A Dynamic Approach with LLM-based Manipulation Checks</h3>
+            <p class="authors"><strong>Yanran Chen</strong> and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>Findings of ACL · Conference</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://aclanthology.org/2025.findings-acl.1250/">Paper</a>
+                <a href="https://github.com/NL2G/EMCONA-UTN/tree/main/llm_manipulation_check">Code+Data</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item" data-paper-id="deepseek-eval" data-type="preprint" data-venue="arxiv" data-year="2025" data-authorship="coauthor">
+            <h3>DeepSeek-R1 vs. o3-mini: How Well can Reasoning LLMs Evaluate MT and Summarization?</h3>
+            <p class="authors">Daniil Larionov, Sotaro Takeshita, Ran Zhang, <strong>Yanran Chen</strong>, Christoph Leiter, Zhipin Wang, Christian Greisinger, and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>arXiv:2504.08120 · Preprint</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://arxiv.org/abs/2504.08120">Paper</a>
+                <a href="https://github.com/NL2G/reasoning-eval">Code+Data</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="year-group" data-year-group="2024">
+          <h2>2024</h2>
+
+          <article class="publication-item" data-paper-id="poetry-diversity" data-type="conference" data-venue="emnlp" data-year="2024" data-authorship="first">
+            <h3>Evaluating Diversity in Automatic Poetry Generation</h3>
+            <p class="authors"><strong>Yanran Chen</strong>, Hannes Gröner, Sina Zarrieß, and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>EMNLP · Conference</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://aclanthology.org/2024.emnlp-main.1097/">Paper</a>
+                <a href="https://github.com/hgroener/diversity_in_poetry_generation">Code+Data</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item" data-paper-id="chatgpt-meta" data-type="journal" data-venue="mlwa" data-year="2024" data-authorship="coauthor">
+            <h3>ChatGPT: A Meta-Analysis after 2.5 Months</h3>
+            <p class="authors">Christoph Leiter, Ran Zhang, <strong>Yanran Chen</strong>, Jonas Belouadi, Daniil Larionov, Vivian Fresen, and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>Machine Learning with Applications · Journal</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://doi.org/10.1016/j.mlwa.2024.100541">Paper</a>
+                <a href="https://github.com/NL2G/ChatGPTReview">Code+Data</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item" data-paper-id="refugee-solidarity" data-type="journal" data-venue="european-societies" data-year="2024" data-authorship="coauthor">
+            <h3>Social Solidarity with Ukrainian and Syrian Refugees in the Twitter Discourse: A Comparison between 2015 and 2022</h3>
+            <p class="authors">Maximilian Weber, Daniela Grunow, <strong>Yanran Chen</strong>, and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>European Societies · Journal</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://doi.org/10.1080/14616696.2023.2275604">Paper</a>
+                <a href="https://zenodo.org/records/8232678">Code+Data</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item" data-paper-id="nllg-0924" data-type="preprint" data-venue="nllg-arxiv-report" data-year="2024" data-authorship="coauthor">
+            <h3>NLLG Quarterly arXiv Report 09/24: What are the Most Influential Current AI Papers?</h3>
+            <p class="authors">Christoph Leiter, Jonas Belouadi, <strong>Yanran Chen</strong>, Ran Zhang, Daniil Larionov, Aida Kostikova, and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>NLLG arXiv Report · Preprint</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://arxiv.org/abs/2412.12121">Paper</a>
+                <a href="https://github.com/NL2G/Quarterly-Arxiv/tree/main/september_2024">Code+Data</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item" data-paper-id="nllg-0124" data-type="preprint" data-venue="nllg-arxiv-report" data-year="2024" data-authorship="first">
+            <h3>NLLG Quarterly arXiv Report 01/24: What are the Most Influential Current AI Papers?</h3>
+            <p class="authors"><strong>Yanran Chen</strong>, Daniil Larionov, Ran Zhang, Christoph Leiter, Jonas Belouadi, Aida Kostikova, and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>NLLG arXiv Report · Preprint</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4896347">Paper</a>
+                <a href="https://github.com/NL2G/Quarterly-Arxiv/tree/main/jan_2024">Code+Data</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="year-group" data-year-group="2023">
+          <h2>2023</h2>
+
+          <article class="publication-item" data-paper-id="menli" data-type="journal" data-venue="tacl" data-year="2023" data-authorship="first">
+            <h3>MENLI: Robust Evaluation Metrics from Natural Language Inference</h3>
+            <p class="authors"><strong>Yanran Chen</strong> and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>TACL · Journal</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://aclanthology.org/2023.tacl-1.47/">Paper</a>
+                <a href="https://github.com/cyr19/MENLI">Code+Data</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item" data-paper-id="transformers-lols" data-type="conference" data-venue="eval4nlp" data-year="2023" data-authorship="first">
+            <h3>Transformers Go for the LOLs: Generating (Humourous) Titles from Scientific Abstracts End-to-End</h3>
+            <p class="authors"><strong>Yanran Chen</strong> and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>Eval4NLP · Workshop</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://aclanthology.org/2023.eval4nlp-1.6/">Paper</a>
+                <a href="https://github.com/cyr19/A2T">Code+Data</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item" data-paper-id="nllg-0923" data-type="preprint" data-venue="nllg-arxiv-report" data-year="2023" data-authorship="coauthor">
+            <h3>NLLG Quarterly arXiv Report 09/23: What are the Most Influential Current AI Papers?</h3>
+            <p class="authors">Ran Zhang, Aida Kostikova, Christoph Leiter, Jonas Belouadi, Daniil Larionov, <strong>Yanran Chen</strong>, Vivian Fresen, and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>NLLG arXiv Report · Preprint</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://arxiv.org/abs/2312.05688">Paper</a>
+                <a href="https://github.com/NL2G/Quarterly-Arxiv/tree/main/September_2023">Code+Data</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item" data-paper-id="nllg-0623" data-type="preprint" data-venue="nllg-arxiv-report" data-year="2023" data-authorship="coauthor">
+            <h3>NLLG Quarterly arXiv Report 06/23: What are the Most Influential Current AI Papers?</h3>
+            <p class="authors">Steffen Eger, Christoph Leiter, Jonas Belouadi, Ran Zhang, Aida Kostikova, Daniil Larionov, <strong>Yanran Chen</strong>, and Vivian Fresen</p>
+            <div class="publication-footer">
+              <span>NLLG arXiv Report · Preprint</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://arxiv.org/abs/2308.04889">Paper</a>
+                <a href="https://github.com/NL2G/Quarterly-Arxiv/tree/main/june_2023">Code+Data</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="year-group" data-year-group="2022">
+          <h2>2022</h2>
+          <article class="publication-item" data-paper-id="bert-repro" data-type="conference" data-venue="emnlp" data-year="2022" data-authorship="first">
+            <h3>Reproducibility Issues for BERT-based Evaluation Metrics</h3>
+            <p class="authors"><strong>Yanran Chen</strong>, Jonas Belouadi, and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>EMNLP · Conference</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://aclanthology.org/2022.emnlp-main.192/">Paper</a>
+                <a href="https://github.com/cyr19/Reproducibility">Code+Data</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="year-group" data-year-group="2021">
+          <h2>2021</h2>
+          <article class="publication-item" data-paper-id="tuda-repro" data-type="conference" data-venue="reprogen" data-year="2021" data-authorship="coauthor">
+            <h3>TUDA-Reproducibility @ ReproGen: Replicability of Human Evaluation of Text-to-Text and Concept-to-Text Generation</h3>
+            <p class="authors">Christian Richter, <strong>Yanran Chen</strong>, and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>ReproGen · Shared Task</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://aclanthology.org/2021.inlg-1.32/">Paper</a>
+                <a href="https://github.com/der-Richter/TUDA-Reproducibility-ReproGen">Code+Data</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="current-year">2026</span> Yanran Chen</span>
+      <a href="index.html">Home</a>
+    </footer>
+  </body>
+</html>
