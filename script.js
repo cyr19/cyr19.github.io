@@ -32,6 +32,16 @@ const previousNews = document.querySelector(".news-prev");
 const nextNews = document.querySelector(".news-next");
 
 if (newsViewport && newsTrack && previousNews && nextNews) {
+  const newsCards = [...newsTrack.querySelectorAll(".news-card")];
+
+  const updateNewsViewportHeight = () => {
+    const visibleCount = Math.min(newsCards.length, 5);
+    const rowHeight = Number.parseFloat(
+      getComputedStyle(newsViewport).getPropertyValue("--news-row-height"),
+    );
+    newsViewport.style.height = `${rowHeight * visibleCount}px`;
+  };
+
   const updateNewsControls = () => {
     const maxScroll = newsViewport.scrollHeight - newsViewport.clientHeight;
     previousNews.disabled = newsViewport.scrollTop <= 2;
@@ -39,18 +49,17 @@ if (newsViewport && newsTrack && previousNews && nextNews) {
   };
 
   const moveNews = (direction) => {
-    const cards = [...newsTrack.querySelectorAll(".news-card")];
-    if (!cards.length) return;
+    if (!newsCards.length) return;
 
-    const currentIndex = cards.reduce((closestIndex, card, index) => {
+    const currentIndex = newsCards.reduce((closestIndex, card, index) => {
       const currentDistance = Math.abs(card.offsetTop - newsViewport.scrollTop);
-      const closestDistance = Math.abs(cards[closestIndex].offsetTop - newsViewport.scrollTop);
+      const closestDistance = Math.abs(newsCards[closestIndex].offsetTop - newsViewport.scrollTop);
       return currentDistance < closestDistance ? index : closestIndex;
     }, 0);
-    const targetIndex = Math.max(0, Math.min(cards.length - 1, currentIndex + direction));
+    const targetIndex = Math.max(0, Math.min(newsCards.length - 1, currentIndex + direction));
 
     newsViewport.scrollTo({
-      top: cards[targetIndex].offsetTop,
+      top: newsCards[targetIndex].offsetTop,
       behavior: "smooth",
     });
   };
@@ -58,7 +67,11 @@ if (newsViewport && newsTrack && previousNews && nextNews) {
   previousNews.addEventListener("click", () => moveNews(-1));
   nextNews.addEventListener("click", () => moveNews(1));
   newsViewport.addEventListener("scroll", updateNewsControls, { passive: true });
-  window.addEventListener("resize", updateNewsControls);
+  window.addEventListener("resize", () => {
+    updateNewsViewportHeight();
+    updateNewsControls();
+  });
+  updateNewsViewportHeight();
   updateNewsControls();
 }
 
@@ -87,7 +100,8 @@ if (publicationDetailButtons.length) {
   publicationDetailButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const publicationItem = button.closest(".publication-item");
-      const publication = window.publicationDetails?.[publicationItem?.dataset.paperId];
+      const paperId = publicationItem?.dataset.paperId;
+      const publication = window.publicationDetails?.[paperId];
       if (!publication) return;
 
       const showBibtex = button.dataset.detail === "bibtex";
@@ -103,7 +117,8 @@ if (publicationDetailButtons.length) {
         dialogContent.append(pre);
       } else {
         const paragraph = document.createElement("p");
-        paragraph.textContent = publication.abstract || "Exact abstract text is not included yet. Please use the Paper link for the official abstract.";
+        const abstract = publication.abstract?.trim();
+        paragraph.textContent = abstract || "Exact abstract text is not included yet. Add it to publications-data.js or use the Paper link.";
         dialogContent.append(paragraph);
       }
 

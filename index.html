@@ -22,6 +22,7 @@
     <header class="site-header">
       <a class="site-name" href="index.html">Yanran Chen</a>
       <nav aria-label="Main navigation">
+        <a class="active" href="index.html" aria-current="page">Home</a>
         <a href="#news">News</a>
         <a href="publications.html">Publications</a>
         <button class="theme-toggle" type="button" aria-label="Switch to dark theme">Dark</button>
@@ -31,32 +32,56 @@
     <main id="main-content">
       <section class="hero" aria-labelledby="page-title">
         <div class="hero-content">
-          <h1 id="page-title"><span>YANRAN</span><span>CHEN</span></h1>
+          <h1 id="page-title">
+            <span><span class="name-english">YANRAN</span><span class="name-chinese" lang="zh">嫣然</span></span>
+            <span><span class="name-english">CHEN</span><span class="name-chinese" lang="zh">陈</span></span>
+          </h1>
 
           <div class="bio">
             <p>
-              PhD student at
-              <a href="https://www.utn.de/en/">University of Technology Nuremberg</a>.
+              PhD student @
+              <a href="https://nl2g.github.io/">NLLG Lab</a> |
+              <a href="https://www.utn.de/en/departments/department-computer-science-artificial-intelligence/nllg/">University of Technology Nuremberg</a>.
             </p>
-            <p>
-              I work on natural language processing, with a focus on language evaluation,
-              computational argumentation, and the social effects of large language models.
-            </p>
+
+            <div class="quick-links" aria-label="External profiles">
+              <a href="mailto:yanran.chen@utn.de">Email</a>
+              <a href="https://scholar.google.com/citations?user=K0iCb00AAAAJ">Scholar</a>
+              <a href="https://github.com/cyr19">GitHub</a>
+              <a href="https://www.linkedin.com/in/yanran-chen-13b229379/">LinkedIn</a>
+            </div>
+
+
           </div>
 
-          <p class="site-notice">This website is a work in progress. Some details are still being updated.</p>
+          <div class="intro">
+          <p>
+              Greetings!
 
-          <p class="latest-line">
-            <span>Latest</span>
-            <a href="https://aclanthology.org/2026.eacl-long.316/">EACL 2026 Outstanding Paper Award</a>
+              I am a third-year PhD student at the NLLG Lab, University of Technology Nuremberg, co-supervised by <a href="https://chatgpt.com/">ChatGPT</a> and <a href="https://www.utn.de/person/prof-dr-steffen-eger/">Prof. Dr. Steffen Eger</a>.
+              Before that, I received my B.Sc. degree in Information Systems Engineering and M.Sc. degree in Computer Science from the <a href="https://www.tu-darmstadt.de/">Technical University of Darmstadt</a>.
+
           </p>
 
-          <div class="quick-links" aria-label="External profiles">
-            <a href="mailto:yanran.chen@utn.de">Email</a>
-            <a href="https://scholar.google.com/citations?user=K0iCb00AAAAJ">Scholar</a>
-            <a href="https://github.com/cyr19">GitHub</a>
-            <a href="https://www.linkedin.com/in/yanran-chen-13b229379/">LinkedIn</a>
+          <p>
+          My PhD research examines <strong>(AI-driven) emotional framing</strong> as a scalable form of persuasive influence, investigating its effects on <strong>human reasoning</strong>, particularly on <strong>perceived argument convincingness</strong> and <strong>logical fallacy detection</strong>. I study human–LLM alignment in emotion-sensitive reasoning and the justification of emotional appeals in computational argumentation, toward building LLM systems for both <strong>evaluating and generating affectively compelling yet bias-resilient arguments</strong>.
+          </p>
+
+          <p>
+          My broader research interests lie in diagnosing and developing <strong>automatic evaluation metrics</strong>, e.g., robust evaluation of machine translation and summarization, quantification of syntactic language evolution, and multidimensional assessment of diversity in automatic poetry generation.
+        </p>
+
+        <p>
+          Beyond my own research, I’m also an avid user of AI4Science and agentic tools—my unofficial coauthors these days.
+        </p>
+
           </div>
+
+          <!-- <p class="site-notice">This website is a work in progress. Some details are still being updated.</p> -->
+
+
+
+
         </div>
 
         <img
@@ -87,19 +112,7 @@
             </article>
             <article class="news-card">
               <time datetime="2026-03">Mar 2026</time>
-              <p>Our paper "<a href="https://aclanthology.org/2026.eacl-long.316/">Emotionally Charged, Logically Blurred: AI-driven Emotional Framing Impairs Human Fallacy Detection</a>" received an Outstanding Paper Award at EACL 2026!</p>
-            </article>
-            <article class="news-card">
-              <time datetime="2025-11">Nov 2025</time>
-              <p>Our work "<a href="https://aclanthology.org/2025.emnlp-main.1797/">Argument Summarization and its Evaluation in the Era of Large Language Models</a>" appeared at EMNLP 2025.</p>
-            </article>
-            <article class="news-card">
-              <time datetime="2025-07">Jul 2025</time>
-              <p>Our paper "<a href="https://aclanthology.org/2025.findings-acl.1250/">Do Emotions Really Affect Argument Convincingness? A Dynamic Approach with LLM-based Manipulation Checks</a>" appeared in Findings of ACL 2025.</p>
-            </article>
-            <article class="news-card">
-              <time datetime="2024-11">Nov 2024</time>
-              <p>We presented our paper "<a href="https://aclanthology.org/2024.emnlp-main.1097/">Evaluating Diversity in Automatic Poetry Generation</a>" at EMNLP 2024.</p>
+              <p>Our paper "<a href="https://aclanthology.org/2026.eacl-long.316/">Emotionally Charged, Logically Blurred: AI-driven Emotional Framing Impairs Human Fallacy Detection</a>" received an Outstanding Paper Award at <em>EACL 2026</em>!</p>
             </article>
           </div>
         </div>
@@ -118,9 +131,8 @@
               <span class="paper-award"><span class="award-medal" aria-hidden="true">🏅</span> Outstanding Paper Award</span>
             </h3>
             <p class="authors"><strong>Yanran Chen</strong>, Lynn Greschner, Roman Klinger, Michael Klenk, and Steffen Eger</p>
-            <p class="description">How AI-generated emotional framing changes human fallacy detection and perceived convincingness.</p>
             <div class="publication-footer">
-              <span>EACL · Conference</span>
+              <span>EACL 2026· Conference</span>
               <div class="publication-actions">
                 <button type="button" data-detail="abstract">Abs</button>
                 <button type="button" data-detail="bibtex">Bib</button>
@@ -133,9 +145,8 @@
           <article class="publication-item" data-paper-id="menli">
             <h3>MENLI: Robust Evaluation Metrics from Natural Language Inference</h3>
             <p class="authors"><strong>Yanran Chen</strong> and Steffen Eger</p>
-            <p class="description">Natural language inference as a more robust foundation for evaluating generated text.</p>
             <div class="publication-footer">
-              <span>TACL · Journal</span>
+              <span>TACL 2023· Journal</span>
               <div class="publication-actions">
                 <button type="button" data-detail="abstract">Abs</button>
                 <button type="button" data-detail="bibtex">Bib</button>
@@ -145,12 +156,39 @@
             </div>
           </article>
 
+          <article class="publication-item" data-paper-id="syntax-change" data-type="journal" data-venue="plos-one" data-year="2026" data-authorship="first">
+            <h3>Syntactic Language Change in English and German: Metrics, Parsers, and Convergences</h3>
+            <p class="authors"><strong>Yanran Chen</strong>, Wei Zhao, Anne Breitbarth, Manuel Stoeckel, Alexander Mehler, Dominik Schlechtweg, and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>PLOS One 2026 · Journal</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0346096">Paper</a>
+                <a href="https://github.com/cyr19/syntaxchange">Code+Data</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item" data-paper-id="emotion-convincingness" data-type="conference" data-venue="findings-acl" data-year="2025" data-authorship="first">
+            <h3>Do Emotions Really Affect Argument Convincingness? A Dynamic Approach with LLM-based Manipulation Checks</h3>
+            <p class="authors"><strong>Yanran Chen</strong> and Steffen Eger</p>
+            <div class="publication-footer">
+              <span>Findings of ACL 2025· Conference</span>
+              <div class="publication-actions">
+                <button type="button" data-detail="abstract">Abs</button>
+                <button type="button" data-detail="bibtex">Bib</button>
+                <a href="https://aclanthology.org/2025.findings-acl.1250/">Paper</a>
+                <a href="https://github.com/NL2G/EMCONA-UTN/tree/main/llm_manipulation_check">Code+Data</a>
+              </div>
+            </div>
+          </article>
+
           <article class="publication-item" data-paper-id="poetry-diversity">
             <h3>Evaluating Diversity in Automatic Poetry Generation</h3>
             <p class="authors"><strong>Yanran Chen</strong>, Hannes Gröner, Sina Zarrieß, and Steffen Eger</p>
-            <p class="description">An evaluation of structural, lexical, semantic, and stylistic diversity in generated poetry.</p>
             <div class="publication-footer">
-              <span>EMNLP · Conference</span>
+              <span>EMNLP 2024· Conference</span>
               <div class="publication-actions">
                 <button type="button" data-detail="abstract">Abs</button>
                 <button type="button" data-detail="bibtex">Bib</button>
@@ -159,6 +197,10 @@
               </div>
             </div>
           </article>
+
+
+
+
         </div>
       </section>
     </main>
