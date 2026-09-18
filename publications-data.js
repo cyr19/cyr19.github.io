@@ -42,6 +42,22 @@ window.publicationDetails = {
   ISBN = "979-8-89176-380-7"
 }`,
   },
+  "emotional-appeal-justification": {
+    title: "Justification of Emotional Appeal in Computational Argumentation",
+    abstract: String.raw`Emotional appeals (EAs) are often treated as fallacious in computational argumentation, yet they may be justified when warranted by the context. We introduce the task of predicting EA justification and present the first human-annotated dataset for this task, covering 1,176 argument-context pairs. Grounded in philosophical literature, our framework evaluates EA justification along logical and emotional dimensions. Human annotations show that justification criteria form a shared latent judgment space, with evidential proportionality and normative acceptability most strongly associated with overall justification. We further find that EAs without logical support are not always judged fully unjustified, and stronger EAs are not necessarily judged less justified. Finally, LLM experiments show that EA justification prediction remains challenging.`,
+    bibtex: "",
+  },
+  "syntactic-complexity-convergence": {
+    title: "Syntactic Complexity Convergence in Dialogue: Analysis of the Phenomenon and Application to LLM Detection",
+    abstract: String.raw`We revisit the under-explored phenomenon of syntactic complexity convergence in dialogue. Extending prior topic-level analyses to full conversations, we examine five human-human datasets and a set of human-LLM dialogues. We integrate and evaluate a multidimensional set of syntactic complexity metrics to quantify structural variation in dialogue. Our analyses reveal robust syntactic complexity convergence across human-human datasets, especially in task-oriented interactions, and statistical tests confirm that these effects are not due to chance. In contrast, human-LLM dialogues show no significant convergence under individual metrics; however, linear-CKA uncovers a distinct cross-metric convergence pattern. Motivated by these differences, we use syntactic complexity as a feature for detecting LLM-involved dialogue, achieving 96% accuracy. Our classification results demonstrate its potential without relying on likelihood-based signals such as surprisal, which require a language model as the estimator.`,
+    bibtex: String.raw`@inproceedings{Wang_Chen_Wang_Eger_Buschmeier,
+  place={Budapest, Hungary},
+  title={Syntactic complexity convergence in dialogue: Analysis of the phenomenon and application to LLM detection},
+  booktitle={Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+  publisher={ACL},
+  author={Wang, Yu and Chen, Yanran and Wang, Yifan and Eger, Steffen and Buschmeier, Hendrik}
+}`,
+  },
   "who-annotates": {
     title: "Who Annotates in NLP? A Large-scale Assessment of Human Annotation Reporting between 2018 and 2025",
     abstract: String.raw`Human annotation is the empirical foundation of much NLP research, from dataset construction to model evaluation, but papers often leave unclear who produced the annotations and how the annotation process was controlled. We provide the first large-scale, task-level audit of human annotation reporting across major NLP venues, asking which annotation details are documented, which are missing, and how reporting varies across time, topic, venue, and intended use of human judgment. We introduce a unified taxonomy of annotation-reporting practices and validate an LLM-assisted extraction pipeline against Annotated-gold, a human-adjudicated gold standard of 41 papers and 72 annotation tasks, where the best model reaches human-comparable agreement with adjudicated labels, with Krippendorff's alpha of 0.606 versus 0.585 for human-human agreement. Using this pipeline, we construct Annotated-llm, a dataset covering ACL-venue papers from 2018-2025, with 2,667 extracted annotation tasks from 1,603 papers, and find that papers frequently report operational details such as recruitment strategies, annotator expertise, and annotation volume, but often omit details needed to assess annotation validity, including training, language proficiency, compensation, socio-demographics, adjudication, and agreement values, especially in model-evaluation studies. Our results show that annotation reporting in NLP has improved over time but remains uneven, and they establish a scalable framework and bare-minimum reporting recommendations for making human annotation more reliable, reproducible, and interpretable.`,
