@@ -300,7 +300,7 @@ main,
 
 .news-viewport {
   --news-row-height: 57px;
-  height: calc(var(--news-row-height) * 5);
+  height: calc(var(--news-row-height) * 3);
   overflow-x: hidden;
   overflow-y: auto;
   scrollbar-width: none;

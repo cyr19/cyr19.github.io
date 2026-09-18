@@ -35,11 +35,11 @@ if (newsViewport && newsTrack && previousNews && nextNews) {
   const newsCards = [...newsTrack.querySelectorAll(".news-card")];
 
   const updateNewsViewportHeight = () => {
-    const visibleCount = Math.min(newsCards.length, 5);
-    const rowHeight = Number.parseFloat(
-      getComputedStyle(newsViewport).getPropertyValue("--news-row-height"),
-    );
-    newsViewport.style.height = `${rowHeight * visibleCount}px`;
+    const visibleCount = Math.min(newsCards.length, 3);
+    const visibleHeight = newsCards
+      .slice(0, visibleCount)
+      .reduce((height, card) => height + card.getBoundingClientRect().height, 0);
+    newsViewport.style.height = `${visibleHeight}px`;
   };
 
   const updateNewsControls = () => {
@@ -68,6 +68,10 @@ if (newsViewport && newsTrack && previousNews && nextNews) {
   nextNews.addEventListener("click", () => moveNews(1));
   newsViewport.addEventListener("scroll", updateNewsControls, { passive: true });
   window.addEventListener("resize", () => {
+    updateNewsViewportHeight();
+    updateNewsControls();
+  });
+  document.fonts?.ready.then(() => {
     updateNewsViewportHeight();
     updateNewsControls();
   });
